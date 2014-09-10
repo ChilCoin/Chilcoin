@@ -28,14 +28,14 @@ INCLUDEPATHS= \
  -I"/c/build/boost_1_55_0" \
  -I"/c/build" \
  -I"/c/build/db-4.8.30.NC/build_unix" \
- -I"/c/build/openssl-1.0.1h/include"
+ -I"/c/build/openssl-1.0.1i/include"
  
 LIBPATHS= \
  -L"$(CURDIR)/leveldb" \
  -L"/c/build/boost_1_55_0/stage/lib" \
  -L"/c/build/miniupnpc" \
  -L"/c/build/db-4.8.30.NC/build_unix" \
- -L"/c/build/openssl-1.0.1h"
+ -L"/c/build/openssl-1.0.1i"
 
 LIBS= \
  -l leveldb \

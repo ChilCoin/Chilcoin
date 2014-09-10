@@ -1,4 +1,4 @@
-0.1.0.0 changes
+0.8.7.2 changes
 =============
 - Mac and Windows Official Gitian Builds: upgrade to openssl-1.0.1g for CVE-2014-0160
                    Linux was not vulnerable with Lucid openssl-0.9.8k

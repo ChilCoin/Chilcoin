@@ -1,15 +1,15 @@
 TEMPLATE = app
 TARGET = chilcoin-qt
 macx:TARGET = "Chilcoin-Qt"
-VERSION = 0.1.0.0
+VERSION = 0.8.7.2
 INCLUDEPATH += src src/json src/qt
 QT += core gui network
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
-DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE
+DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE BOOST_THREAD_PROVIDES_GENERIC_SHARED_MUTEX_ON_WIN __NO_SYSTEM_INCLUDES
 CONFIG += no_include_pwd
 CONFIG += thread
 CONFIG += static
-
+  u
 # for boost 1.37, add -mt to the boost libraries
 # use: qmake BOOST_LIB_SUFFIX=-mt
 # for boost thread win32 with _win32 sufix
@@ -25,8 +25,8 @@ BOOST_INCLUDE_PATH=C:/build/boost_1_55_0
 BOOST_LIB_PATH=C:/build/boost_1_55_0/stage/lib
 BDB_INCLUDE_PATH=C:/build/db-4.8.30.NC/build_unix
 BDB_LIB_PATH=C:/build/db-4.8.30.NC/build_unix
-OPENSSL_INCLUDE_PATH=C:/build/openssl-1.0.1h/include
-OPENSSL_LIB_PATH=C:/build/openssl-1.0.1h
+OPENSSL_INCLUDE_PATH=C:/build/openssl-1.0.1i/include
+OPENSSL_LIB_PATH=C:/build/openssl-1.0.1i
 MINIUPNPC_INCLUDE_PATH=C:/build/
 MINIUPNPC_LIB_PATH=C:/build/miniupnpc
 QRENCODE_INCLUDE_PATH=C:/build/qrencode-3.4.3

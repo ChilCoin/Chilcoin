@@ -35,14 +35,32 @@ namespace Checkpoints
     // + Contains no strange transactions
     static MapCheckpoints mapCheckpoints =
         boost::assign::map_list_of
-        (  0, uint256("0xd58888d61baa00c7acd6388356e449ca5d54beacab38361fd48cad0012959a2d"))
+        (     0, uint256("0xd58888d61baa00c7acd6388356e449ca5d54beacab38361fd48cad0012959a2d"))
+        (     1, uint256("0xc8b400c4920f8fac074a2c0ee9dfbe1238ae8d1058f671ca2a687dce3f020bd3"))
+        (     2, uint256("0x2bb1ba9134dc3586e4ed530f93ceed6bbafddbf0101209dcad0a04e39cf306d2"))
+        (     4, uint256("0x1a25b800b63ce88712c6922b1250650fdedfa69dd4bdc7ce9416f91fa0509656"))
+        (     8, uint256("0x03a74ca916a18c70269295c5dc99cd8324493a0f8a70e197b08940b1a02a4d97"))
+        (    16, uint256("0x49787d2751d24fa66c9c951a2b6a9fd74e5fab31220324bc7e88c82ff1f6276a"))
+        (    32, uint256("0x3e8440b622dfe14d0b31d3ee89743fb4e0461c83fc7736f438ee2a4f58f2c09a"))
+        (    64, uint256("0x049c83dddabb4348cba5b2d33d0983cd1f9f45031dd92f69ecf28720fe768df7"))
+        (   128, uint256("0xc95b575778f4521e3bfa193396303a076a9d10ec026cc5e24c04d8c1bbc006bb"))
+        (   256, uint256("0xeaa0c8504f7072cedfdc9304629ebead05eb2489ea965ddad7647820a6294bc3"))
+        (   512, uint256("0x2f1f852dcb7646424f211f289f01cc494da867899f0a57b6cc7bd6caa1bc78ef"))
+        (  1024, uint256("0xda3ea3b06fec5d586f31b24cb351e3f7f364a2da89731242c7c46190d1494ff2"))
+        (  2048, uint256("0xb073e6cf24e3351b6e48dcd38a3739f51465799a3463cc168bf12fe87b36fb14"))
+        (  4096, uint256("0x9ae88c13647e26a7a2b6fda70375a38564af6bbdfd3d95e54a4df3f6ad4a4935"))
+        (  8192, uint256("0x9576bdfb790f80043f014235d8f803fa0fb1aabd0c3cfea6c87fefed56f56a8a"))
+        ( 16384, uint256("0x2c6722c5d7359779e8e564b34358561e734453c414241276440a9ac1bbaa2694"))
+        ( 32768, uint256("0x514895ae1a7ff8cb57436fb4ee543f6d6561b21d327e3735403652c300764a1f"))
+        ( 61712, uint256("0x302391a7f45300cfd9b40e25526f194206ed05b7193126a0419da5b7c01d746c"))
+        
         ;
     static const CCheckpointData data = {
         &mapCheckpoints,
-        1396366781, // * UNIX timestamp of last checkpoint block
-        3854671,    // * total number of transactions between genesis and last checkpoint
+        1410303386, // * UNIX timestamp of last checkpoint block
+        62071,    // * total number of transactions between genesis and last checkpoint
                     //   (the tx=... number in the SetBestChain debug.log lines)
-        12000.0     // * estimated number of transactions per day after checkpoint
+        100.0     // * estimated number of transactions per day after checkpoint
     };
 
     static MapCheckpoints mapCheckpointsTestnet =
